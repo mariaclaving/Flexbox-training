@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height:100vh;
+    width:100%;
+    background: linear-gradient(120deg,hsl(337, 40%, 71%),hsl(349, 27%, 35%));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.grandparent {
+    height: 30rem;
+    width: 30rem;
+    background: linear-gradient(100deg,hsl(337, 100%, 85%), hsl(216, 51%, 71%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.9rem;
+    box-shadow: 5px 5px 5px 4px hsla(0, 0%, 0%, 0.5);
+    gap: 0.3rem;
+   }
+
+
+.parent {
+    height:14rem;
+    width: 28rem;
+    background: linear-gradient(100deg,hsl(337, 100%, 85%), hsl(216, 51%, 71%));
+    /* border: 3px solid black; */
+    border-radius: 0.9rem;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.Top {
+    border-bottom: none;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+
+}
+
+.Bottom {
+    border-bottom: none;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+
+}
+
+.child {
+    height:100%;
+    width: 50%;
+    background-color: hsl(349, 27%, 35%);
+    border: 3.5px solid black;
+    border-radius: 0.9rem;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    color:black;
+    font-weight: bold;
+} 
+
+/* .parent:hover p {
+    transform: rotate3d(1, 1, 1, 300deg);
+    transition: 0.5s;
+} */
+
+.grandparent:hover .child {
+    transform: rotateY(180deg);
+    transition: 0.5s;
+    background-color: black;
+   
+}
+
+.DancingDog {
+    height: 5.3rem;
+    width: 5.3rem;
+    border-radius: 2.6rem;
+}
+
+.DancingCat {
+    height: 5.3rem;
+    width: 5.3rem;
+    border-radius: 2.6rem;
+
+}
+
+.innerChild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+
+}
+
+
+@media only screen and (max-width: 800px){
+   body {
+    height:auto;
+    width:auto;
+    padding: 0.7rem;
+   }
+   
+    .child {
+        background-color: white;
+
+    }
+
+
+    .grandparent {
+        height:auto ;
+        width: auto;
+        background: linear-gradient(100deg,hsl(337, 100%, 85%), hsl(216, 51%, 71%));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.9rem;
+        box-shadow: 5px 5px 5px 4px hsla(0, 0%, 0%, 0.5);
+        gap: 0.3rem;
+        padding: 1rem;
+    }
+        
+        
+    .parent {
+        height:auto;
+        width: auto;
+        background: linear-gradient(100deg,hsl(337, 100%, 85%), hsl(216, 51%, 71%));
+        /* border: 3px solid black; */
+        border-radius: 0.9rem;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+        
+    }
+        
+        
+    .child {
+    height: 12rem;
+    width: 12rem;
+    }
+
+
+
+
+}
